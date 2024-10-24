@@ -1,94 +1,212 @@
 English	Rekharhakr	Rkaarik	Ancient	Class	Notes
+0, none, null	rin	zir	rin	N	Numbers grouped below ...
 1, one, single	yir	yor, kio	yir	N
+10, tenth, decade	hii, hiira	zin 	xi	N	
+100, hundred	datái	datár	datái	N	
+1000, thousand	zinárai	zindáran	sína	N	x thousand y hundred tens
+11, eleven	hiiyir	urvin	alái	N	
+12, twelve	hi'ahr	talvin	ahái	N	
+13, thirteen	hiisen	sin'a'zin	asár	N	[rekh] units go after tens [khar] unit-and-tens
+14, fourteen	hiixirn	xirn'a'zin	axír	N	
+15, fifteen, round [of a game]	hiizor	vor'a'zin	aváz	N	
+16, sixteen	hiirun	run'a'zin	xí'run	N	
+17, seventeen	hiizair	zair'a'zin	xi'zaar	N	
+18, eighteen	hiipra	erkh'a'zin	xí'vra	N	
+19, nineteen	hiithu	thun'a'zin	xi'thú	N	
+2, second	ahr	tah	ah	N	
+20, twenty, score	ráhathii	ratazín	naks	N	
+200, two hundred	ahr datái	tah datái	nankái	N	[ancient] any hundreds >= 300 goes [n]-100 
+21, twenty one	ráhathii yir	yor'a'ratazín	náks'iir	N	
+3, third	sen	sin	sen	N	
+30, thirty	sénhii	siizin	saks	N	[rekh/khar] any number > 30 goes [n]-10
+4, fourth	xirn	xirn	xirn	N	
+40, forty	xírnhii	xírnzin	xirn'xi	N	[ancient] any number > 40 goes [n]-10
+5, fifth	zor	vor	zor	N	
+6, sixth	run	run	run	N	
+7, seventh	zair	zair	zaar	N	
+8, eighth	pra	erkh	vra	N	
+9, ninth	thu	thun	thu	N	
+twin, pair	yelr, yelv-	yel, yelf-	ahr, ah-	N	"A pair of" is a prefix placed before the noun
+sibling	yelvór	aelvór	elvr	N
 above, on top of	háva	alán	haf	Pp
 and	a	a, e	a	Conj
 animal crest, crown	lovii	lovis	lovii	N
 animal scale	zaakos	zokaas	zaaks	N
 around, surround	yúrir	yurír	yrir	Pp
-Asyr Shai	asiir	/	/	N	Proper
+Asyr Shai	asiir	"	"	N	Proper
 bare, naked	kálgen	kalaan	kaln	Adj
-be (to)	siin	/	/	Vb	Irregular
+be (to)	siin (Pr. siin / Ps. is / Pp. is / Fu. xii / Co. xia / Im. sii)	" (Cop. is)	"	Vb	Irregular; 'is' Rkaarik copula form
 below, beneath	siia	xiia	xia	Pp
 bend, yield	ligárin	lakáren	líkrin	Vb
 bind, constrict	sávan	saván	savn	Vb
 bird, avian, fowl	uhára	uhíri	uhar	N
 blow	vusiin	vusín	vsiin	Vb	Exhale air with force
-born, birth, create (to)	genísn	genisén	genín	Vb
-branch, bough	kládi	/	/	N
+born, birth, create (to)	genísn (Pr. genís / Ps. genís / Pp. genísir / Fu. geníx / Co. genixaa / Im. genii) 	genisén	genín	Vb	Irregular in Rekharhakr
+branch, bough	kládi	"	"	N
 but, however	ir	vaal	ir	Conj
-can, able to	kat	/	/	MVb
+can, able to	kat	"	"	MVb
 cloud	asúr	asúr	asr	N
-cold	mae	/	/	Adj
-come (to)	komán	/	komin	Vb	Irregular in Rekharhakr
+cold	mae	"	"	Adj
+come (to)	komán (Pr. " / Ps. komás / Pp. kománar / Fu. komáe / Co. komáx / Im. kom)	"	komin	Vb	Irregular in Rekharhakr, regular in Rkaarik except present tense is 'kom'
 copper	tónis	tónin	tons	N
-crystal, gemstone	polór	/	polr	N
+crystal, gemstone	polór	"	polr	N
 darken (to), extinguish (to)	kiisin	kiisen	kis'sn	Vb
-deep	váth	/	vath	Adj
-depths, abyss	váthas	/	vsath	N
+deep	váth	"	vath	Adj
+depths, abyss	váthas	"	vsath	N
 desolate, barren	táikhan	táikhe	taikh	Adj
 diamond	xirón	xhíron	xirón	N
 dragon	rekhár	r'khar	rekhár	N
 dragonkind	rekháridiks	r'kháridiks	rekhár	N
 elder, sage	drakhán	drakaan	drkhaan	N
-fast, quick	xyae	/	/	Adj
-fire	yíra	/	yir	N
+fast, quick	xyae	"	"	Adj
+fire	yíra	"	yir	N
 flames	khiyaar	hyaar	yir	N
-fly (to)	asrai'ín	asra'ín	(a)srain	Vb	Irregular
+fly (to)	asrai'ín (Pr. asrái / Ps. asráis / Pp. asrainír / Fu. asrái'ix / Co. asraxaa / Im. asrai'ii) 	asra'ín (Ps. asráns / Pp. asranír / Fu. asrá'ix)	(a)srain	Vb	Irregular
 giant, huge	lutáin	kiaks	laks	Adj
 go (to), away (to)	vahín	fayín	vahn	Vb
-have (to)	yaar	/	/	Vb	Irregular
-he (3rd male)	aak	thar	thaa	Pn	Also gender-neutrain in Rkaarik
+have (to)	yaar (Pr. yaar /  Pr1P. aarn / Ps. aan / Pp. yánir / Fu. aax / Co. aaxa / Im. ean)	"	"	Vb	Irregular; 'aarn' in present first person only, same irregular conjugations in Rkaarik
+possess, hold (to)	ayaar (Pr. ayaar / Ps. ayaan / Pp. áyanir / Fu. ayaax / Co. áyaxa / Im. anaen)	ayaaren	yaar	Vb	Irregular in Rekharhakr 
+he (3rd male)	aak	thar	thaa	Pn	Also gender-neutral in Rkaarik
 hearth, haven	esxín	exhín	axn	N
 home	axín	axhín	axn	N
 I (1st sgl)	zar, za	vos	za	Pn
 I, We (1st sgl noble)	várkhan	alak'kaan	va arkhán	Pn
 I, We (1st sgl royal)	valkhán	alkaan	va khán	Pn
-it (3rd lower)	thaa	see	see	Pn
+it (3rd lower)	thaa	see	tha	Pn
 lake, pond	thúran	tháeraf	th'r	N
 language, speech	hakr	hkar	hakr	N
 layered, repeated, numerous	aratái	aratás	ar(a)tái	Adj
-light	vos	/	/	N
+light	vos	"	"	N
 like (to)	kain	sen	ksan	Vb
-live (to)	xirín	xirén	xirn	Vb	Irregular
+live (to)	xirén (Pr. xirén / Ps. xiríh / Pp. xiriir / Fu. xiríkh / Co. xirkhá / Im. xii)	xirén (Ps. xiréns / Pp. xirénir / Fu. xiríx / Co. xirixaa / Im. xirér)	xirn	Vb	Irregular, being alive
 may, permitted to	iir	aer	iir	MVb
 move (to)	exliin	xilyín	exln	Vb	Emotionally
-move (to), shift (to)	xilyín	/	xiln	Vb	Physically
+move (to), shift (to)	xiláen (Pr. xiláen / Ps. xilaés / Pp. xilaér / Fu. xiláex / Co. xiláexa / Im. xiláe)	"	xiln	Vb	Physically, Irregular in Rekharhakr
 must	os	us	os	MVb
 My (1st poss)	zarón, ron	vosón, son	zaron, zron, ron	Pn
 nation, country	khárik	kaarik	khar'k	N
-night	xarái	/	xrai	N
+night	xarái	"	xrai	N
 no, not	dia	nia	di	MVb
 nothing	dakh	nakh	dakh	N
-play (to)	paziin	/	pazn	Vb
+play (to)	paziin	"	pazn	Vb
 river, stream	thúrav	thúraf	th'r	N
 sad, dreary	maan	maasn	maan	Adj
 sea, ocean	xathúr, xázathur	xázathur	th'r, xazthr	N
-see (to)	natén	nadén	nadn	Vb
+see, watch (to)	nadén (Pr. nadén / Ps. nadéns / Pp. nadár / Fu. na'íd / Co. na'íxa / Im. naii)	natén	nadn	Vb	Irregular in Rekharhakr
 shall	has	xha	as	MVb
-she (3rd female)	khaa	/	/	Pn
+she (3rd female)	khaa	"	"	Pn
 shining, shine	serín	serái	srín	Adj
 snow	mars	mara	mar	N
 spark (to), light (to)	anavín	ánavan	anávn	Vb	Lighting a flame, a torch, etc.
-species, kind, race	idíks	/	idks	N
-spell, enchantment	maks	/	/	N
+species, kind, race	idíks	"	idks	N
+spell, enchantment	maks	"	"	N
 storm	kaatai	kaadai	kaat(ai)	N
 sun	ásiir	asiir	asiir	N
 they (3rd sgl)	aa		saa	Pn	Does not exist in rkaarik
-tithe, tribute	názar	/	nazr	N
+they (3rd pl)	saa	"	(a)saa	Pn
+they (3rd pl lower)	thiaa	see	(a)thaa	Pn
+tithe, tribute	názar	"	nazr	N
 tree	kanán	kánin	kaan	N
 tyrant, dominator	yirsáre	eraskhár	yrskhar	N
-wasteland, wastes	táikhadir	/	taikhdír	N
-water	thur	/	th'r	N
+wasteland, wastes	táikhadir	"	taikhdír	N
+water	thur	"	th'r	N
 wealth, riches	othálon	okathan	othlón	N
-wild, unrestrained	arák	/	/	Adj
+wild, unrestrained	arák	"	"	Adj
 will, willing	sis	xis	sis	MVb
 wind, gale	ervís	arvís	evís	N
-winter	mára	/	/	N
+winter	mára	"	"	N
 wisdom	draniir	drakaan	drkaan	N
-with, alongside	nal	mer	na	Pp
+with, possesssing	nal	mer	na	Pp
 world, universe	kánai	kanái	kanái	N
-Xiron Shai	xíron	/	/	N	Proper
+Xiron Shai	xíron	"	"	N	Proper
 yet	ir sa	vaal sa	(a)tán	Conj
 You (2nd inf)	zii	zur	zi	Pn
-You (2nd resp)	záhar	/	zah	Pn
-
+You (2nd resp)	záhar	"	zah	Pn
+great, mighty	taníe, tan-	"	"	Adj	Prefix tan- before honorifics and titles
+from	zon	sen	zon, zo	Pp
+earth, ground	dir	"	"	N
+fire	yira	"	yir	N
+burn (to)	yirin	yiren	yirn	Vb
+grace, mercy, generosity	krars	khars	khrar	N
+mortal	siak	"	"	N
+mountain	hákros	hakrás	haks	N
+deep	vath	fath	vath	Adj
+eye	arúm	arún	(a)rum	N
+like, as	san	sen	san	Pp	Comparative (A like B)
+azure, deep blue	xasáth	"	xsas	Adj
+flood-rains	miirvúthos			N	nf.
+fast, quick	xyae	"	"	Adj
+death	khars 			N	nf.
+famine	líkhres			N	nf.
+damned, condemned, unlucky	khazás			N	nf. Those who seem to be on the wrong side of life. Not derogatory.
+people	arík	"	ark	N	Non-dragon 
+starve (to)	likháin			Vb	nf.
+die (to)	kharatín			Vb	nf.
+this	hir			Pp
+chaotic	diskáie		dskór	Adj	nf.
+chaos	diskáia		dskór	N	nf.
+resist, struggle against (to)	ankonín	aakonan	ákan	Vb	
+arise, rise (to)	gaimín			Vb
+divine, holy, celestial	xanáe	xanáe	xána	Adj	
+divinity, blessed	xána	xána	xána	N	
+deity, god	xanakhán	xanakhán	xána	N
+magic	makára	makaar	maks	N	
+interlace, intertwine (to)	sinyarvín	sinyarfén	syarv'n	Vb	
+blood	arkhái	arkhái	(a)khái	N	
+within	ithiin			Pp	nf.
+distress	vriae			N	nf.
+as, whilst	kai			Pp	nf.
+wash, wash over (to)	thíravin			Vb	nf.
+guard, protect (to)	kantín			Vb	nf.
+plan, intend (to)	laevín			Vb	nf.
+raise, angle up (to)	matáin			Vb	nf.
+head	tokái			N	nf. body part 
+roar (to)	vrakháir (Ps. vrakháie / Pp. vrakháir / Fu. vrakhái / Co. vrakhára / Im. vrákha)			Vb	nf. Irregular
+order, commandment	tarxaal			N	nf.
+sky	sára	"	sar	N
+torrential and unrelenting	evakháie			Adj	nf. Of rains and storms
+peaceful	áriae			Adj	nf.
+gentle	erváie			Adj	nf.
+celebrate, rejoice (to)	karomín			Vb	nf.
+rain	vuthós			N	nf.
+become (to)	kamaan (Ps. kamaan / Pp. kamaarn / Fu. kamaax / Co. kamaxaa / Im. kamaa)			Vb	nf. Irregular
+prayer	gáda			N	nf.
+pray (to)	gardín			Vb	nf.
+another, someone else	alaar			Pn	nf.
+anger, annoyance	arák			N	nf.
+meet, encounter (to)	saeraan (Ps. saeraas / Pp. saeraar / Fu. saeraax / Co. saeraxaa / Im. saeraa)			Vb	nf. Irregular in Rekharhakr
+wrath, fury	khímer			N	nf.
+deadly, extremely dangerous	kharáse			Adj	nf.
+monster	diziiren			N	nf.
+terrifying beyond comprehension	vaivére			Adj	nf. like primordial fear
+all, everything, everyone	enád	ánad	(e)nád	Pn	
+tremble, shake	xir'rakhiin			Vb	nf.
+before, afore	dimúr			Pp	nf.
+gold	kínae	"	"	N	
+dare (to)	tamiin			Vb	nf.
+how	viir	fiir	vir	Pp
+how dare	khak tamiin			Id	nf. Not separable
+half	yamr, yam-		yam, yam-	Adj	nf. Prefixable
+fake, imitation	táe'ern, táe'er-			Adj	nf. Prefixable (similar to 僞 in Chinese)
+taint, pollute, adulterate (to)	diathiin			Vb	nf.
+scorn, besmirch (to)	parakín			Vb	nf.
+design, plan	xáeda			N	nf.
+torment, torture, suffering	takhaal			N	nf.
+although	akái			Pp	nf.
+scum, wretch	khar			N	nf. Derogatory 
+still, yet, nonetheless	atáne		(a)tán	Pp	nf.
+kin, family	kath			N	nf.
+another	alaar			Pp	nf.
+sentence, punishment, judgement	timorík			N	nf.
+give, deal, mete out (to)	maizín			Vb	nf. Somewhat more abstract than malán
+tear (to)	skazín			Vb	nf.
+asunder, apart	khiyáris			Adj	nf.
+live, reside (to)	aranín	áranin	ára	Vb	
+exile (to)	áeksirin			Vb	nf. Both exile and to be exiled
+far apart, far away	mákris			Adj	nf.
+hence, thus	ithár			Pp	nf.
+between	ithárer			Pp	nf.
+balance	isériyi			N	nf.
+where	ton			Pp	nf.
+repose, rest	yaan		yaan	N	nf.
+give (to)	malán (Ps. malán / Pp. malár / Fu. maláx / Co. malaxá / Im. malá)	" (Ps. malás)	maln	Vb	Irregular

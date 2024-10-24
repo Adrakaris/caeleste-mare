@@ -15,6 +15,14 @@ const MISC = "misc";
 
 var fanPages = [
     {
+        "date": "2020/09/15",
+        "link": "blog/lianglong/",
+        "title": "The Tale of Two Brothers",
+        "desc": "(Updated 2024/10/24) \"Yelvrekharon Aiser\", a poem that talks about the Rain Gods. \"They say there lives a dragon god, atop the holy peak. None have seen him though, yet we believe and pray, for the rains are kind.\"</p>",
+        "picture": "",
+        "tags": [LEGENDS]
+    },
+    {
         "date": "2024/03/21",
         "link": "blog/zhengyinjia",
         "title": "Dragonshome · Cheng Yin Kia",
@@ -70,14 +78,7 @@ var fanPages = [
         "picture": "",
         "tags": [LEGENDS]
     },
-    {
-        "date": "2020/09/15",
-        "link": "blog/lianglong/",
-        "title": "The Tale of Two Brothers",
-        "desc": "\"Yelvrekharon Aiser\", a poem that talks about the Rain Gods. \"They say there lives a dragon god, atop the holy peak. None have seen him though, yet we believe and pray, for the rains are kind.\"</p>",
-        "picture": "",
-        "tags": [LEGENDS]
-    },
+    
     {
         "date": "2020/07/14",
         "link": "blog/yirandastron/",

@@ -46,9 +46,11 @@
 			<p></p>
 			
 			<div class="md-conv">
-				A slash / in an entry indicates it is identical to the one left of it.
+				A "ditto mark" ( `"` ) in an entry indicates it is identical to the one left of it. "nf." indicates not finished. Irregular verbs have conjugations shown; if a conjugation is missing from *rkaarik*, that indicates it is the same as its *rekharhakr* counterpart. Word categories are just a rough guide and many nouns especially can be used as adjectives.
 
 				Words separated by spaces in the query do not need to be consecutive in the dictionary.
+
+				Search in specific columns by using the buttons provided or by pressing Ctrl + Alt + the number on the button (⌃ ⌥ Number). Press Esc to cancel search and show all.
 			</div>
 		</div>
 
@@ -63,8 +65,16 @@
 		
 		<div class="colourband green">
 			<h2>Dictionary</h2>
-			<input id="se" class="search" type="text" placeholder="Search...">
+			<input id="se" class="search" type="text" placeholder="Search..." autofocus>
             <button id="sb" type="submit" class="search">Go</button>
+			<div class="cbox" style="display: flex; align-items: center; flex-direction: row; width: 100%; justify-content: center;">
+				<button id="s-eng" type="submit" class="search">English (1)</button>
+				<button id="s-east" type="submit" class="search">Rekharhakr (2)</button>
+				<button id="s-west" type="submit" class="search">Rkaarik (3)</button>
+				<button id="s-anc" type="submit" class="search">Ancient (4)</button>
+				<button id="s-typ" type="submit" class="search">Class (5)</button>
+				<button id="s-note" type="submit" class="search">Notes (6)</button>
+			</div>
 		</div>
 		
 		<div class="cbox w">
