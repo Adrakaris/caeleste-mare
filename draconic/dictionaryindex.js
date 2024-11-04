@@ -68,7 +68,7 @@ function main(req) {
             return;
         }
 
-        if (!(event.ctrlKey && event.altKey)) {
+        if (!((event.ctrlKey || event.metaKey) && event.altKey)) {
             return;
         }
 
