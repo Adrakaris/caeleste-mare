@@ -864,5 +864,11 @@ s-side {
         white-space: pre-wrap;
         tab-size: 2;
     }
+
+    figure > img {
+        margin: 0 auto; 
+        display: block; 
+        width: 100%; 
+    }
 }
 
