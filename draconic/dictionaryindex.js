@@ -151,7 +151,7 @@ function addRow(table, array, rowType) {
     let row = document.createElement("tr");
     array.forEach(e => {
         let th = document.createElement(rowType);
-        th.innerText = e;
+        th.innerHTML = parseMarkdown(e); 
         row.appendChild(th);
     });
 
@@ -164,8 +164,17 @@ function addRow(table, array, rowType) {
     row.children.item(3).style.color = ANCIENT;
     row.children.item(3).style.fontStyle = "italic";
     row.children.item(4).style.color = CLASS;
-    table.appendChild(row)
+    table.appendChild(row);
 }
+
+function parseMarkdown(text) {
+    return text
+        .replace(/__([^_]+?)__/g, "<u>$1</u>")                     // underline
+        .replace(/\*\*([^\*]+?)\*\*/g, "<strong>$1</strong>")      // bold
+        .replace(/(?:\*|_)([^*_]+?)(?:\*|_)/g, "<em>$1</em>")       // italic
+        .replace(/`([^`]+?)`/g, "<code>$1</code>");                 // code
+}
+
 
 /**
  *  

@@ -1,12 +1,12 @@
-English	Rekharhakr	Rkaarik	Ancient	Class	Notes
-0, none, null	rin	zir	rin	N	Numbers grouped below ...
+English	Rekharhakr	Rkaarik	Hakr	Class	Notes
+0, none, null	rin	zir	rin	N	
 1, one, single	yir	yor, kio	yir	N
 10, tenth, decade	hii, hiira	zin 	xi	N	
 100, hundred	datái	datár	datái	N	
 1000, thousand	zinárai	zindáran	sína	N	x thousand y hundred tens
 11, eleven	hiiyir	urvin	alái	N	
 12, twelve	hi'ahr	talvin	ahái	N	
-13, thirteen	hiisen	sin'a'zin	asár	N	[rekh] units go after tens [khar] unit-and-tens
+13, thirteen	hiisen	sin'a'zin	asár	N	[RE] units go after tens [RK] unit-and-tens
 14, fourteen	hiixirn	xirn'a'zin	axír	N	
 15, fifteen, round [of a game]	hiizor	vor'a'zin	aváz	N	
 16, sixteen	hiirun	run'a'zin	xí'run	N	
@@ -15,12 +15,12 @@ English	Rekharhakr	Rkaarik	Ancient	Class	Notes
 19, nineteen	hiithu	thun'a'zin	xi'thú	N	
 2, second	ahr	tah	ah	N	
 20, twenty, score	ráhathii	ratazín	naks	N	
-200, two hundred	ahr datái	tah datái	nankái	N	[ancient] any hundreds >= 300 goes [n]-100 
+200, two hundred	ahr datái	tah datái	nankái	N	[HK] any hundreds >= 300 goes [n]-100 
 21, twenty one	ráhathii yir	yor'a'ratazín	náks'iir	N	
 3, third	sen	sin	sen	N	
-30, thirty	sénhii	siizin	saks	N	[rekh/khar] any number > 30 goes [n]-10
+30, thirty	sénhii	siizin	saks	N	[RE/RK] any number > 30 goes [n]-10
 4, fourth	xirn	xirn	xirn	N	
-40, forty	xírnhii	xírnzin	xirn'xi	N	[ancient] any number > 40 goes [n]-10
+40, forty	xírnhii	xírnzin	xirn'xi	N	[HK] any number > 40 goes [n]-10
 5, fifth	zor	vor	zor	N	
 6, sixth	run	run	run	N	
 7, seventh	zair	zair	zaar	N	
@@ -35,7 +35,7 @@ animal scale	zaakos	zokaas	zaaks	N
 around, surround	yúrir	yurír	yrir	Pp
 Asyr Shai	asiir	"	"	N	Proper
 bare, naked	kálgen	kalaan	kaln	Adj
-be (to)	siin (Pr. siin / Ps. is / Pp. is / Fu. xii / Co. xia / Im. sii)	" (Cop. is)	"	Vb	Irregular; 'sn' Rkaarik copula form
+be (to)	siin **I** (Pr. siin / Ps. is / Pp. is / Fu. xii / Co. xia / Im. sii)	" (Cop. is)	"	Vb	Irregular; 'sn' Rkaarik copula form
 below, beneath	siia	xiia	xia	Pp
 bend, yield	ligárin	lakáren	líkrin	Vb
 bind, constrict	sávan	saván	savn	Vb
@@ -86,13 +86,13 @@ must	os	us	os	MVb
 My (1st poss)	zarón, ron	vosón, son	zaron, zron, ron	Pn
 nation, country	khárik	kaarik	khar'k	N
 night	xarái	"	xrai	N
-no, not	dia	nia	di	MVb
+no, not	da	ne	de	MVb
 nothing	dakh	nakh	dakh	N
 play (to)	paziin	"	pazn	Vb
 river, stream	thúrav	thúraf	th'r	N
 sad, dreary	maan	maasn	maan	Adj
 sea, ocean	xathúr, xázathur	xázathur	th'r, xazthr	N
-see, watch (to)	nadén (Pr. nadén / Ps. nadéns / Pp. nadár / Fu. na'íd / Co. na'íxa / Im. naii)	natén	nadn	Vb	Irregular in Rekharhakr
+see, watch (to)	nadén	"	nadn	Vb	[RE] Regular-Irregular
 shall	has	xha	as	MVb
 she (3rd female)	khaa	"	"	Pn
 shining, shine	serín	serái	srín	Adj
