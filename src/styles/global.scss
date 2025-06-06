@@ -1,0 +1,15 @@
+@use "./headings.scss";
+@use "./colours.scss";
+@use "./fonts.scss";
+
+html, body {
+    background: colours.$bg;
+    color: colours.$txt;
+    font-family: fonts.$body;
+    font-size: 13pt;
+    line-height: 150%;
+    font-variant-ligatures: contextual;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
