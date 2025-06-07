@@ -1,0 +1,19 @@
+---
+import CMHeader from "../components/CMHeader.astro"
+import { Links } from "../utils/constants"
+import BaseLayout from "./BaseLayout.astro"
+// FIELDS
+// `displaytitle` main display title, if not present then uses frontmatter.title
+// `subtitle` (optional) small subtitle underneath
+// `background` (optional) parallax background
+const {frontmatter} = Astro.props  
+---
+<BaseLayout frontmatter={frontmatter}>
+    <CMHeader title={frontmatter.displaytitle ? frontmatter.displaytitle : frontmatter.title}
+              subtitle={frontmatter.subtitle}
+              backgroundImgUrl={frontmatter.background}
+              large={true}
+              navLinks={Links.HSLINKS}/>
+    <slot />
+</BaseLayout>
+

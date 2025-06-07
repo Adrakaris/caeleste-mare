@@ -1,6 +1,7 @@
 @use "./headings.scss";
 @use "./colours.scss";
 @use "./fonts.scss";
+@use "./paragraphs.scss";
 
 html, body {
     background: colours.$bg;
@@ -12,4 +13,8 @@ html, body {
     min-height: 100%;
     margin: 0;
     padding: 0;
+}
+
+.centre {
+    text-align: center;
 }

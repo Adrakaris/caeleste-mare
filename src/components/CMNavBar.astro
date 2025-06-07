@@ -1,0 +1,9 @@
+---
+import "../styles/components/cmnavbar.scss"
+const {navLinks} = Astro.props as {navLinks: {href: string, name: string}[]}
+---
+<div class="header-navbar">
+    {navLinks.map(link => (
+        <a class="nav" href={link.href}>{link.name}</a>
+    ))}
+</div>

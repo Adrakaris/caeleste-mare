@@ -1,0 +1,7 @@
+---
+import "../styles/components/cbox.scss"
+const { wide, class: classNames = "" } = Astro.props
+---
+<div class={wide ? "cbox w" : "cbox" + " " + classNames}>
+    <slot />
+</div>

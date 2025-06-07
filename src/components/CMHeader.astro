@@ -1,0 +1,27 @@
+---
+import "../styles/components/cmheader.scss"
+import { BgImage } from "../utils/constants"
+import CBox from "./CBox.astro"
+import CMNavBar from "./CMNavBar.astro"
+const { 
+    backgroundImgUrl = BgImage.DRAGON,
+    title,
+    subtitle = null,
+    navLinks = [], // type: Array<{name: string; href: string}>
+    large = false
+} = Astro.props
+---
+<header>
+    <div class={large ? "parallax home" : "parallax small"}
+         style={`--parallax-image: url("${backgroundImgUrl}");`}>
+
+        <CMNavBar navLinks={navLinks} />
+         
+        <CBox class="overlay">
+            <h1 class="centre">{title}</h1>
+            {subtitle &&
+                (<p class="subtitle centre">{subtitle}</p>)
+            }
+        </CBox>
+    </div>
+</header>
