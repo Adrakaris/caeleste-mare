@@ -1,0 +1,9 @@
+---
+import "../styles/components/cmbutton.scss"
+const {href = "."} = Astro.props
+---
+<a href={href} class="cmbutton">
+    <div>
+        <slot />
+    </div>
+</a>

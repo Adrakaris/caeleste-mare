@@ -5,24 +5,86 @@ displaytitle: "Caeleste Mare"
 subtitle: "神 海"
 ---
 import CBox from "../components/CBox.astro"
+import ColourBand from "../components/ColourBand.astro"
+import Drac from "../components/Drac.astro"
+import CMButton from "../components/CMButton.astro"
+import PictureArticleLink from "../components/PictureArticleLink.astro"
+
+<ColourBand>
+# Caeleste Mare
+
+<p class="subtitle">
+    <Drac>kanaion genthur</Drac>
+</p>
+
+</ColourBand>
 
 <CBox>
 
-# Caeleste mare
-This is a test site
+*Deep in the mountains that touch the sky, through lush vales and snow-covered passes, a great freshwater sea lies at the roof of the world. The many civilisations around it call it the Spring of the Earth.*
 
-Go to [the blog of stories](/stories)
+*The celestial sea is the foundation on which the many worlds float, revolving around each other in endless night. They are the worlds of gods, worlds of elementals, and worlds of men and beasts.*
 
+---
 
-lorem ipsum your mother 
+Known in the ancient Rivenian tongue as *Caeleste Mare*, The Heavenly Sea, the name has stayed through many millennia, and the many kingdoms and empires of the land. Before Mare, there was nothing, but the great deities that came before. They created the great Sea for their children, who would bear the races seen today, in the Age of Man. The great sea is not just the material world, the one with day and night, with forests, plains, mountains, and everything in between, but rather a web of worlds, connected by 'streams' of magic that permeate throughout them all. However, the material world, being the largest, most prosperous, and most bountiful, became known as the world, the centrepiece of it all.
 
-layoutl
+The world is vast and mostly unclaimed, with pockets of civilisation nestled in temperate lands and river valleys. In the west, on the Great Sea, lies the Human Dacramean Civilisations, split into many small kingdoms and city states. To the far east, up in the mountains and lush valleys lies the Great Ancient Empire of the Asyrians, the first civilisation, and the last. Nomadic tribes roam the vast steppes that separate the two, building disconnected, yet powerful empires in between. Much of the world remains unconquered, untamed, and many places have never even see a man, elf, dwarf or gnome.
 
-layout
+</CBox>
 
-layoutl
-layoutl
+<ColourBand>
+## Caeleste Mare
+</ColourBand>
 
-llandudno
+<CBox>
 
+<div class="twocol">
+    <PictureArticleLink name="Pantheon of the Gods"
+                        href="gods"
+                        img="/images/small/pantheon.webp"
+                        imgAlt="A statue standing amidst ancient ruins" 
+                        />
+    <PictureArticleLink name="The Many Planes"
+                        href="planes"
+                        img="/images/small/planes.webp"
+                        imgAlt="A World Tree" 
+                        />
+    <PictureArticleLink name="The Material Plane"
+                        href="material"
+                        img="/images/small/material.webp"
+                        imgAlt="A white castle by a lake in a verdant valley, a dragon flying overhead" 
+                        />
+</div>
+
+</CBox>
+
+<ColourBand>
+## Latest Stories
+</ColourBand>
+
+<CBox wide>
+    Nothing here but us chickens!
+</CBox>
+<CBox>
+---
+</CBox>
+<CBox wide>
+    <div class="threecol">
+        <div></div>
+        <CMButton href="stories">*More...*</CMButton>
+        <div></div>
+    </div>
+</CBox>
+
+<ColourBand>
+## Collections and Records
+</ColourBand>
+
+<CBox>
+    <div class="twocol">
+        <CMButton>
+            The Draconic language
+        </CMButton>
+    </div>
 </CBox>

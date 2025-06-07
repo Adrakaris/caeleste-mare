@@ -1,0 +1,12 @@
+@use "../colours.scss";
+
+footer {
+    background-color: colours.$green;
+    color: colours.$band-txt;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    position: sticky;
+    position: -webkit-sticky;    
+    left: 0;
+    box-shadow: 0 50vh 0 50vh colours.$green;
+}

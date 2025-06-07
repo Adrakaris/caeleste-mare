@@ -1,0 +1,10 @@
+---
+const { p } = Astro.props
+---
+{
+    p ? (
+        <p class="draconic"><slot /></p>
+    ) : (
+        <span class="draconic"><slot /></span>
+    )
+}

@@ -2,6 +2,7 @@
 @use "./colours.scss";
 @use "./fonts.scss";
 @use "./paragraphs.scss";
+@use "./generic.scss";
 
 html, body {
     background: colours.$bg;
@@ -15,6 +16,10 @@ html, body {
     padding: 0;
 }
 
-.centre {
-    text-align: center;
+img {
+    width: 100%;
+}
+
+hr {
+    color: colours.$green;
 }

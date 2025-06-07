@@ -1,4 +1,5 @@
 ---
+import CMFooter from "../components/CMFooter.astro";
 import "../styles/global.scss"
 const {frontmatter} = Astro.props;
 ---
@@ -11,5 +12,7 @@ const {frontmatter} = Astro.props;
 </head>
 <body>
     <slot />
+
+    <CMFooter />
 </body>
 </html>
