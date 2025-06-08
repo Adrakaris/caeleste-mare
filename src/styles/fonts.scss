@@ -331,8 +331,7 @@
     src: url("/fonts/royal_initialen.woff") format("woff");
 }
 
-$dropcap: 'Royal Initialen';
-$draconic: 'Rekharhakr';
-$body: 'Lora', 'KingHwa_OldSong', serif;
-// $heading: 'Urbanist', 'LXGW WenKai TC', serif;
 $heading: 'Urbanist', 'KingHwa_OldSong', serif;
+$body: 'Lora', 'KingHwa_OldSong', serif;
+$dropcap: 'Royal Initialen', $body;
+$draconic: 'Rekharhakr', $body;
