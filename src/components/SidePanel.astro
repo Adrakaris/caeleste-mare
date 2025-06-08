@@ -1,0 +1,24 @@
+---
+// sideImage: a block of text with a strip of image to the side
+// by default this is on the left (but can be explicitly specified), specify right for
+// right
+import "../styles/components/sidepanel.scss"
+const {
+    right,
+    image,
+    alt = "",
+    adjustment = "0%"
+} = Astro.props
+---
+<div class={right ? "rightcol" : "leftcol"}>
+    {
+        right && <div><slot /></div>   
+    }
+    <div class="fitdiv">
+        <img src={image} alt={alt} style={`--off:${adjustment}`}>
+    </div>    
+    {
+        !right && <div><slot /></div>
+    }
+</div>
+

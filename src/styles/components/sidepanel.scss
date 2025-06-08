@@ -1,0 +1,32 @@
+.leftcol {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    column-gap: 40px;
+    padding-bottom: 40px;
+}
+.rightcol {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    column-gap: 40px;
+    padding-bottom: 40px;
+}
+
+.fitdiv > img {
+    object-fit: cover;
+    object-position: var(--off, 0) 0;
+    height: 100%;
+    width: 100%;
+}
+
+.banner {
+    width: 100%;
+    height: 120px;
+
+    img {
+        object-fit: cover;
+        object-position: 0 var(--off, 0);
+        height: 100%;
+        width: 100%;
+    }
+}
+

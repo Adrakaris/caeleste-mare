@@ -1,0 +1,16 @@
+---
+// banner: a horizontal bannering image
+// by default this is on the left (but can be explicitly specified), specify right for
+// right
+import "../styles/components/sidepanel.scss"
+const {
+    image,
+    alt = "",
+    adjustment = "0%"
+} = Astro.props
+---
+<div class="banner">
+    <img src={image} alt={alt} style={`--off:${adjustment}`}>
+</div>
+
+
