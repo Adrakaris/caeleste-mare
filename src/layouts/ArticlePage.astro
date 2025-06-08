@@ -22,7 +22,7 @@ const {frontmatter} = Astro.props
               backgroundImgUrl={frontmatter.background}
               large={false}
               draconic={frontmatter.draconic}
-              navLinks={frontmatter.links === "all" ? Links.ALLLINKS : [Link.HOME, Link.BACK]}/>
+              navLinks={frontmatter.links === "all" ? Links.ALL_LINKS : Links.BLOG_ARTICLE}/>
     <slot />
 </BaseLayout>
 

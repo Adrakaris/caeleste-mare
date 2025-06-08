@@ -20,7 +20,10 @@ h2 {
 h3 {
     font-size: 20pt;
     letter-spacing: 2px;
-    margin-bottom: -4pt;
+    // margin-bottom: -4pt;
+    &+p, &+blockquote, &+li {
+        margin-top: -1em;
+    }
 }
 
 h4 {

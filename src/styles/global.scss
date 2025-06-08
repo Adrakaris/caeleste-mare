@@ -4,6 +4,7 @@
 @use "./paragraphs.scss";
 @use "./generic.scss";
 @use "./anchor.scss";
+@use "./tables-lists.scss";
 
 html, body {
     background: colours.$bg;
@@ -23,4 +24,10 @@ img {
 
 hr {
     color: colours.$green;
+}
+
+blockquote {
+    border-left: 2px solid colours.$green;
+    padding-left: 40px;
+    margin-left: 0px;
 }

@@ -1,0 +1,58 @@
+@use "./colours.scss";
+
+$table_margin: 12px;
+
+table, th, td {
+    border-collapse: collapse;
+    border: none;
+}
+
+th, td {
+    padding: 0 $table_margin;
+}
+
+table {
+    margin: $table_margin auto;
+
+    th {
+        background: colours.$green-light;
+        text-align: left;
+    }
+
+    tr:nth-child(even) td {
+        background: colours.$green-light;
+    }
+
+    &.grey {
+        th {
+            background: lightgrey;
+        }
+
+        tr:nth-child(even) td {
+            background: lightgrey;
+        }
+    }
+
+    &.noborder th, &.noborder td {
+        background: none;
+    }
+}
+
+
+li {
+    margin-bottom: 8px;
+}
+
+:is(ul.not, ol.not)>li {
+    margin-bottom: 0px;
+}
+
+ol,
+ul {
+    &.side {
+        border-left: 1px solid colours.$green;
+        border-spacing: 24px 0px;
+        padding-left: 24px;
+        margin-left: -24px;
+    }
+}

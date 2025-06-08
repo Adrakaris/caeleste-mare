@@ -1,4 +1,5 @@
 @use "../fonts.scss";
+@use "../colours.scss";
 
 .dropcap {
     font-family: fonts.$dropcap, serif;
@@ -6,5 +7,14 @@
     float: left;
     line-height: 1;
     margin-right: 6px;
-    margin-bottom: -0.3em;
+}
+
+.text-surround {
+    border: 1px solid colours.$green;
+    border-radius: 0.25em;
+    background: colours.$bg-dark;
+}
+
+.text-large {
+    font-size: 1.4em;
 }
