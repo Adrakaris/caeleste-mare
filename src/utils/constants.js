@@ -4,8 +4,8 @@ export const BgImage = {
 
 export const Link = {
     HOME: {name: "Home", href: "/"},
-    STORIES: {name: "Stories", href: "/stories"},
-    STORIES_BACK: {name: "Back", href: "/stories"},
+    STORIES: {name: "Stories", href: "/stories/"},
+    STORIES_BACK: {name: "Back", href: "/stories/"},
     BACK: {name: "Back", href: "../"},
 };
 
