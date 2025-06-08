@@ -1,0 +1,28 @@
+@use "../colours.scss";
+@use "../fonts.scss";
+
+input[type=text].search {
+	background-color: colours.$band-txt;
+	padding: 6px;
+ 	border: none;
+ 	margin-top: 8px;
+ 	font-size: 17px;	
+ 	width: 300px;
+    font-family: fonts.$body;
+}
+
+button.search {
+	background-color: colours.$green;
+	padding: 6px;
+	margin-top: 8px;
+	margin-right: 16px;
+	font-size: 17px;
+    font-family: fonts.$body;
+	color: colours.$band-txt;
+	border: none;
+	cursor: pointer;
+
+    &:hover {
+        background-color: colours.$green-dark;
+    }
+}

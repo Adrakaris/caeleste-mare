@@ -1,6 +1,6 @@
 ---
 import CMHeader from "../components/CMHeader.astro"
-import { Links } from "../utils/constants"
+import { Link, Links } from "../utils/constants"
 import BaseLayout from "./BaseLayout.astro"
 // FIELDS
 // `displaytitle` main display title, if not present then uses frontmatter.title
@@ -22,7 +22,7 @@ const {frontmatter} = Astro.props
               backgroundImgUrl={frontmatter.background}
               large={false}
               draconic={frontmatter.draconic}
-              navLinks={frontmatter.links === "all" ? Links.ALLLINKS : Links.HSLINKS}/>
+              navLinks={frontmatter.links === "all" ? Links.ALLLINKS : [Link.HOME, Link.BACK]}/>
     <slot />
 </BaseLayout>
 
