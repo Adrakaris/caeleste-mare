@@ -1,9 +1,11 @@
 ---
-const { p } = Astro.props
+const { p, d } = Astro.props
 ---
 {
     p ? (
         <p class="draconic"><slot /></p>
+    ) : d ? (
+        <div class="draconic"><slot /></div>
     ) : (
         <span class="draconic"><slot /></span>
     )

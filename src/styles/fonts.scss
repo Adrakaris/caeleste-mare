@@ -10,6 +10,12 @@
     /* src: url("./font/rekharhakr-minuscule.woff") format("woff2"); */
 }
 
+@font-face {
+    font-family: "Royal Initialen";
+    src: url("/fonts/royal_initialen.woff") format("woff");
+}
+
+$dropcap: 'Royal Initialen';
 $draconic: 'Rekharhakr';
 $body: 'Lora', 'Noto Serif SC', serif;
 $heading: 'Urbanist', 'LXGW WenKai TC', serif;
