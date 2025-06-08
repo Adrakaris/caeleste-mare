@@ -1,0 +1,28 @@
+---
+import CMHeader from "../components/CMHeader.astro"
+import { Links } from "../utils/constants"
+import BaseLayout from "./BaseLayout.astro"
+// FIELDS
+// `displaytitle` main display title, if not present then uses frontmatter.title
+//      if set to _ then the whole box is hidden
+// `draconic` set to "yes" (or anything) to render display title in draconic
+// `subtitle` (optional) small subtitle underneath
+// `background` (optional) parallax background
+// `links` (optional) set to "all" for all links, i.e. Home Blog Back
+//      defaults to not including Back
+const {frontmatter} = Astro.props  
+---
+<BaseLayout frontmatter={frontmatter}>
+    <CMHeader title={
+                    frontmatter.displaytitle 
+                        ? (frontmatter.displaytitle == "_" ? "" : frontmatter.displaytitle)
+                        : frontmatter.title
+              }
+              subtitle={frontmatter.subtitle}
+              backgroundImgUrl={frontmatter.background}
+              large={false}
+              draconic={frontmatter.draconic}
+              navLinks={frontmatter.links === "all" ? Links.ALLLINKS : Links.HSLINKS}/>
+    <slot />
+</BaseLayout>
+

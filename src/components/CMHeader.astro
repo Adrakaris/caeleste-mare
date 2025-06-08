@@ -8,7 +8,8 @@ const {
     title,
     subtitle = null,
     navLinks = [], // type: Array<{name: string; href: string}>
-    large = false
+    large = false,
+    draconic = false,
 } = Astro.props
 ---
 <header>
@@ -16,12 +17,16 @@ const {
          style={`--parallax-image: url("${backgroundImgUrl}");`}>
 
         <CMNavBar navLinks={navLinks} />
-         
-        <CBox class="overlay">
-            <h1 class="centre">{title}</h1>
-            {subtitle &&
-                (<p class="subtitle centre">{subtitle}</p>)
-            }
-        </CBox>
+        
+        {
+            title && (
+            <CBox class="overlay">
+                <h1 class={"centre" + (draconic ? " draconic" : "")}>{title}</h1>
+                {subtitle &&
+                    (<p class="subtitle centre">{subtitle}</p>)
+                }
+            </CBox>
+            )
+        }
     </div>
 </header>

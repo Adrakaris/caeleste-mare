@@ -3,14 +3,23 @@ layout: "../layouts/LandingPage.astro"
 title: "Stories"
 ---
 import CBox from "../components/CBox.astro"
+import ColourBand from "../components/ColourBand.astro"
+import BlogStoryList from "../components/BlogStoryList.astro"
 
+<ColourBand>
+##
+</ColourBand>
 <CBox>
 
-# Testing the blog page
-
-Is it here or is it not?
-
-[Back](/)
+Lore entries, stories, and miscellaneous stuff for *Caeleste Mare*
 
 </CBox>
+
+<ColourBand>
+## Blog
+
+{/* There should be a search box here, I need to figure out how to do that */}
+</ColourBand>
+
+<BlogStoryList />
 

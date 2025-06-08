@@ -1,0 +1,36 @@
+---
+import CBox from "./CBox.astro";
+import { sortPostsByDateDesc } from "../utils/functions"
+
+const matches = import.meta.glob("../pages/stories/*.mdx", {eager: true});
+const posts = Object.values(matches);
+const sortedPosts = sortPostsByDateDesc(posts);
+const postData = sortedPosts.map((post:any) => ({
+    url: post.url,
+    title: post.frontmatter.title,
+    date: post.frontmatter.date,
+    updateddate: post.frontmatter.updateddate,
+    description: post.frontmatter.description,
+    tags: post.frontmatter.tags
+}));  // this is cached at build time, will be used for filtering
+---
+<CBox>
+    {sortedPosts.map((post: any) => (
+        <div>
+            <a href={post.url}>
+                <h2 style="margin-bottom: 0;">{post.frontmatter.title}</h2>
+            </a>
+            <p>
+                <b>{post.frontmatter.date}.</b>
+                {post.frontmatter.updateddate && <span>(Updated {post.frontmatter.updateddate})</span>}
+                {post.frontmatter.description}
+            </p>
+            {
+                post.frontmatter.tags && <p class="green">
+                    {post.frontmatter.tags.map((tag: string) => "#" + tag).join(" ")}
+                </p>
+            }
+        </div>
+    ))}
+</CBox>
+

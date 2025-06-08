@@ -1,0 +1,10 @@
+@use "./colours.scss";
+
+a {
+    color: colours.$green;
+    text-decoration: none;
+
+    &:hover:not(.nav) {
+        text-decoration: underline;
+    }
+}

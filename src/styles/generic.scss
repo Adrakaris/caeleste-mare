@@ -1,7 +1,12 @@
 @use "./fonts.scss";
+@use "./colours.scss";
 
 .centre {
     text-align: center;
+}
+
+.green {
+    color: colours.$green;
 }
 
 .draconic {
