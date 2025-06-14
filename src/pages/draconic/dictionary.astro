@@ -1,0 +1,37 @@
+---
+import CBox from "../../components/CBox.astro";
+import CMButton from "../../components/CMButton.astro";
+import ColourBand from "../../components/ColourBand.astro";
+import ArticlePage from "../../layouts/ArticlePage.astro";
+
+const frontmatter = {
+    title: "Draconic Dictionary",
+    displaytitle: "Draconic",
+    links: "all",
+}
+---
+<ArticlePage frontmatter={frontmatter}>
+
+    <ColourBand>
+        <h1>Dictionary</h1>
+    </ColourBand>
+
+    <CBox>
+        <CMButton href="../">Back</CMButton>
+
+        <p>
+            A "ditto mark" ( " ) in an entry indicates it is identical to the one left of it. "nf." indicates not finished. Irregular verbs have conjugations shown; if a conjugation is missing from <i>rkaarik</i>, that indicates it is the same as its <i>rekharhakr</i> counterpart. Word categories are just a rough guide and many nouns especially can be used as adjectives.
+        </p>
+        <p>
+            Words separated by spaces in the query do not need to be consecutive in the dictionary.
+        </p>
+        <p>
+            Search in specific columns by using the buttons provided or by pressing Ctrl + Alt + the number on the button (⌃ ⌥ Number). Press Esc to cancel search and show all.
+        </p>
+    </CBox>
+
+    <ColourBand>
+        <h2><code>//TODO</code></h2>
+    </ColourBand>
+
+</ArticlePage>

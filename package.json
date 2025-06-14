@@ -9,7 +9,9 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^5.9.0"
+    "astro": "^5.9.0",
+    "remark-mdx-frontmatter": "^5.2.0",
+    "remark-mdx-toc": "^0.3.1"
   },
   "devDependencies": {
     "@astrojs/mdx": "^4.3.0",
