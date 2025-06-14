@@ -1,0 +1,12 @@
+.floatbox {
+    float: right;
+    display: flex;
+    align-items: start;
+    height: 100px;
+    gap: 20px;
+
+    img {
+        height: 100px;
+        box-shadow: none;
+    }
+}
