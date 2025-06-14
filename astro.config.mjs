@@ -7,5 +7,6 @@ export default defineConfig({
     integrations: [
         mdx()
     ],
-    trailingSlash: "always"
+    trailingSlash: "always",
+    site: "https://fantasy.yijun.hu"
 });
