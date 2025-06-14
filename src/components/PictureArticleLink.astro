@@ -4,7 +4,7 @@ import CMButton from "./CMButton.astro"
 const {name, href, img, imgAlt} = Astro.props
 ---
 <div>
-    <h3>{name}</h3>
+    <h3 class="compress">{name}</h3>
     <CMButton href={href}>
         <img src={img} alt={imgAlt}>
     </CMButton>
