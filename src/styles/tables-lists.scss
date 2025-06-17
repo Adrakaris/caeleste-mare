@@ -25,11 +25,11 @@ table {
 
     &.grey {
         th {
-            background: lightgrey;
+            background: colours.$phbmauve;
         }
 
         tr:nth-child(even) td {
-            background: lightgrey;
+            background: colours.$phbmauve;
         }
     }
 

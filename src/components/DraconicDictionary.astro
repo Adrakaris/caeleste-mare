@@ -1,0 +1,157 @@
+---
+import "../styles/components/blogstorylist.scss";
+import fs from "fs";
+import ColourBand from "./ColourBand.astro";
+import CBox from "./CBox.astro";
+
+const tsv = fs.readFileSync(
+    new URL("../data/draconic.tsv", import.meta.url),
+    "utf-8",
+);
+
+const lines = tsv.trim().split("\n");
+
+// Parse headers
+const headers = lines[0].split("\t");
+
+// Parse rows, pad as needed
+const rows = lines.slice(1).map((line) => {
+    const cells = line.split("\t");
+    // Pad missing trailing columns
+    while (cells.length < headers.length) cells.push("");
+    return Object.fromEntries(headers.map((h, i) => [h, cells[i] ?? ""]));
+});
+
+// Sort by the 'English' column
+rows.sort((a, b) =>
+    a.English.localeCompare(b.English, "en", { sensitivity: "base" }),
+);
+---
+
+<ColourBand>
+    <h2>Dictionary</h2>
+    <input
+        id="se"
+        class="search"
+        type="text"
+        placeholder="Search..."
+        autofocus
+    />
+    <button id="sb" type="submit" class="search">Go</button>
+    <div
+        class="cbox"
+        style="display: flex; align-items: center; flex-direction: row; width: 100%; justify-content: center; flex-wrap: wrap;"
+    >
+        <button id="s-eng" type="submit" class="search">English (1)</button>
+        <button id="s-east" type="submit" class="search">Rekharhakr (2)</button>
+        <button id="s-west" type="submit" class="search">Rkaarik (3)</button>
+        <button id="s-anc" type="submit" class="search">Ancient (4)</button>
+        <button id="s-typ" type="submit" class="search">Class (5)</button>
+        <button id="s-note" type="submit" class="search">Notes (6)</button>
+    </div>
+</ColourBand>
+<CBox wide class="especiallyso">
+
+    <table id="dictionary" class="grey dictionarytable"></table>
+
+    <script is:inline define:vars={{ rows }} type="module">
+        const COLORS = ["#783F04", "#20124D", "#4C1130", "#274E13", "#7F6000"];
+        const tableEl = document.getElementById("dictionary");
+        const inputEl = document.getElementById("se");
+        const goBtn = document.getElementById("sb");
+        const colButtons = [
+            "s-eng",
+            "s-east",
+            "s-west",
+            "s-anc",
+            "s-typ",
+            "s-note",
+        ].map((id) => document.getElementById(id));
+        let activeCols = [0, 1, 2, 3, 4, 5];
+
+        // extract header keys in order
+        const headerKeys = Object.keys(rows[0]);
+        const dataObjs = rows;
+
+        function renderTable(objs) {
+            tableEl.innerHTML = "";
+            addHeaderRow();
+            objs.forEach((obj) => {
+                const cells = headerKeys.map((k) => obj[k] ?? "");
+                addRow(cells);
+            });
+        }
+
+        function addHeaderRow() {
+            const tr = document.createElement("tr");
+            headerKeys.forEach((h, i) => {
+                const th = document.createElement("th");
+                th.innerHTML = `<h3 style="padding:.6em 0 0 0; margin:0">${h}</h3>`;
+                th.style.color = COLORS[i] || "";
+                tr.appendChild(th);
+            });
+            tableEl.appendChild(tr);
+        }
+
+        function addRow(cells) {
+            const tr = document.createElement("tr");
+            cells.forEach((txt, i) => {
+                const td = document.createElement("td");
+                td.innerHTML = txt
+                    .replace(/__(.+?)__/g, "<u>$1</u>")
+                    .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
+                    .replace(/(?:\*|_)([^*_]+?)(?:\*|_)/g, "<em>$1</em>")
+                    .replace(/`([^`]+?)`/g, "<code>$1</code>");
+                td.style.color = COLORS[i] || "";
+                if (i > 0 && i < 4) td.style.fontStyle = "italic";
+                tr.appendChild(td);
+            });
+            tableEl.appendChild(tr);
+        }
+
+        function doSearch() {
+            const kw = inputEl.value.trim().toLowerCase();
+            const result = kw
+                ? dataObjs.filter((obj) => {
+                      const words = kw.split(/\s+/);
+                      return words.every((w) =>
+                          activeCols.some((i) =>
+                              (obj[headerKeys[i]] || "")
+                                  .toLowerCase()
+                                  .includes(w),
+                          ),
+                      );
+                  })
+                : dataObjs;
+            renderTable(result);
+        }
+
+        // wire buttons & hotkeys
+        goBtn.addEventListener("click", doSearch);
+        inputEl.addEventListener(
+            "keyup",
+            (e) => e.key === "Enter" && doSearch(),
+        );
+        colButtons.forEach((btn, i) =>
+            btn.addEventListener("click", () => {
+                activeCols = [i];
+                doSearch();
+            }),
+        );
+        document.addEventListener("keydown", (e) => {
+            if (e.key === "Escape") {
+                inputEl.value = "";
+                activeCols = [0, 1, 2, 3, 4, 5];
+                return renderTable(dataObjs);
+            }
+            if ((e.ctrlKey || e.metaKey) && e.altKey) {
+                const n = parseInt(e.key, 10);
+                if (n >= 1 && n <= 6) colButtons[n - 1].click();
+            }
+        });
+
+        renderTable(dataObjs);
+    </script>
+    
+</CBox>
+

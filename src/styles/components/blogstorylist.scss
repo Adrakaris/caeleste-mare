@@ -26,3 +26,17 @@ button.search {
         background-color: colours.$green-dark;
     }
 }
+
+table.dictionarytable {
+	tr > th {
+		background-color: colours.$bg;
+		padding-bottom: 4pt;
+	}
+}
+
+@media (max-width: 800px) {
+	.cbox.w.especiallyso {
+		padding-left: 0;
+		width: 100%;
+	}
+}
