@@ -1,13 +1,9 @@
 ---
 import "../styles/components/blogstorylist.scss";
-import fs from "fs";
 import ColourBand from "./ColourBand.astro";
 import CBox from "./CBox.astro";
 
-const tsv = fs.readFileSync(
-    new URL("../data/draconic.tsv", import.meta.url),
-    "utf-8",
-);
+import tsv from "../data/draconic.tsv?raw";
 
 const lines = tsv.trim().split("\n");
 
