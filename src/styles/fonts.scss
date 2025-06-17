@@ -3,6 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..600;1,100..600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100..900&display=swap');
 
 // #region kinghwa
 @font-face {font-family: "KingHwa_OldSong";src:url("https://img.vistudium.top/font/kinghwa/caa39c5e292fc5c4f123701a653244fe.woff2") format("woff2");font-style: normal;font-weight: 400;font-display: swap;unicode-range:U+9dd6-9e19;}
@@ -335,3 +337,4 @@ $heading: 'Urbanist', 'KingHwa_OldSong', serif;
 $body: 'Lora', 'KingHwa_OldSong', serif;
 $dropcap: 'Royal Initialen', $body;
 $draconic: 'Rekharhakr', $body;
+$sansserif: 'Manrope', 'Noto Sans SC', sans-serif;

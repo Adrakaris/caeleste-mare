@@ -1,0 +1,64 @@
+@use "./colours.scss";
+@use "./fonts.scss";
+
+/*
+CALLOUTS LIST
+
+readaloud
+readaloud-serif (with standard serif font
+comment (undcorated untitled comment box)
+comment-t (as above but titled)
+*/
+
+$standard-padding: 0.01em 1em;
+$shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+
+[data-callout] {
+    font-family: fonts.$sansserif;
+    font-size: 12pt; 
+    line-height: 130%;
+    position: relative;
+}
+
+[data-callout-type="readaloud"],
+[data-callout-type="readaloud-serif"] {
+    background-color: colours.$bgtan;
+    padding: $standard-padding;
+    box-shadow: $shadow;
+    border-right: 2px solid colours.$dndred;
+    border-left: 2px solid colours.$dndred;
+
+    [data-callout-title] {
+        display: none;
+    }
+
+    .corner-circle {
+        width: 8px;
+        height: 8px;
+        background-color: colours.$dndred;
+        border-radius: 50%;
+        position: absolute;
+    }
+
+    $offset: -5px;
+
+    .top-left     { top: $offset;    left: $offset;    }
+    .top-right    { top: $offset;    right: $offset;   }
+    .bottom-left  { bottom: $offset; left: $offset;    }
+    .bottom-right { bottom: $offset; right: $offset;   }
+}
+
+[data-callout-type="readaloud-serif"] {
+    font-size: 13pt;
+    font-family: fonts.$body;
+}
+
+[data-callout-type="comment"] {
+    background-color: colours.$green-light;
+    padding: $standard-padding;
+    
+    [data-callout-title] {
+        display: none;
+    }
+}
+

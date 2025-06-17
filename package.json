@@ -9,6 +9,7 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@r4ai/remark-callout": "^0.6.2",
     "astro": "^5.9.0",
     "remark-mdx-frontmatter": "^5.2.0",
     "remark-mdx-toc": "^0.3.1"
