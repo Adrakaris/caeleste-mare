@@ -18,7 +18,7 @@ English	Rekharhakr	Rkaarik	Hakr	Class	Notes
 200, two hundred	ahr datái	tah datái	nankái	N	[HK] any hundreds >= 300 goes [n]-100 
 21, twenty one	ráhathii yir	yor'a'ratazín	náks'iir	N	
 3, third	sen	sin	sen	N	
-30, thirty	sénhii	siizin	saks	N	[RE/RK] any number > 30 goes [n]-10
+30, thirty	sénhii	siizin	saks	N	[RE|RK] any number > 30 goes [n]-10
 4, fourth	xirn	xirn	xirn	N	
 40, forty	xírnhii	xírnzin	xirn'xi	N	[HK] any number > 40 goes [n]-10
 5, fifth	zor	vor	zor	N	
@@ -35,19 +35,19 @@ animal scale	zaakos	zokaas	zaaks	N
 around, surround	yúrir	yurír	yrir	Pp
 Asyr Shai	asiir	"	"	N	Proper
 bare, naked	kálgen	kalaan	kaln	Adj
-be (to)	siin I{Pres: _siin_ | Past, Plup: _is_ | Futr. *xii* | Cond. *xia* | Impr. *sii* | Copl. *sn*}	" I{Copl. *is*}	"	Vb	RE and RK only differ on copula
+be (to)	siin I{Pres: _siin_ | Past, Plup: _is_ | Futr. *xii* | Cond. *xia* | ImPres. *sii* | Copl. *sn*}	" I{Copl. *is*}	"	Vb	RE and RK only differ on copula
 below, beneath	siia	xiia	xia	Pp
 bend, yield	ligárin	lakáren	líkrin	Vb
 bind, constrict	sávan	saván	savn	Vb
 bird, avian, fowl	uhára	uhíri	uhar	N
 blow	vusiin	vusín	vsiin	Vb	Exhale air with force
-born, birth, create (to)	genísn (Pr. genís / Ps. genís / Pp. genísir / Fu. geníx / Co. genixaa / Im. genii) 	genisén	genín	Vb	Irregular in Rekharhakr
+born, birth, create (to)	genísn I{Pres. _genís_ | Past. _genís_ | Plup. _genísir_ | Futr. _geníx_ | Cond. _genixaa_ | ImPres. _genii_} 	genisén	genín	Vb	Irregular in Rekharhakr
 branch, bough	kládi	"	"	N
 but, however	ir	vaal	ir	Conj
 can, able to	kat	"	"	MVb
 cloud	asúr	asúr	asr	N
 cold	mae	"	"	Adj
-come (to)	komán (Pr. " / Ps. komás / Pp. kománar / Fu. komáe / Co. komáx / Im. kom)	"	komin	Vb	Irregular in Rekharhakr, regular in Rkaarik except present tense is 'kom'
+come (to)	komán I{Pres. " | Past. _komás_ | Plup. _kománar_ | Futr. _komáe_ | Cond. _komáx_ | Impr. _kom_}	komán I{Pres. _kóm_}	komín	Vb	RK Irregular present only
 copper	tónis	tónin	tons	N
 crystal, gemstone	polór	"	polr	N
 darken (to), extinguish (to)	kiisin	kiisen	kis'sn	Vb
@@ -61,11 +61,11 @@ elder, sage	drakhán	drakaan	drkhaan	N
 fast, quick	xyae	"	"	Adj
 fire	yíra	"	yir	N
 flames	khiyaar	hyaar	yir	N
-fly (to)	asrai'ín (Pr. asrái / Ps. asráis / Pp. asrainír / Fu. asrái'ix / Co. asraxaa / Im. asrai'ii) 	asra'ín (Ps. asráns / Pp. asranír / Fu. asrá'ix)	(a)srain	Vb	Irregular
+fly (to)	asrai'ín I{Pres. _asrái_ | Past. _asráis_ | Plup. _asrainír_ | Futr. _asrái'ix_ | Cond. _asraxaa_ | Impr. _asrai'ii_} 	asra'ín I{Past. _asráns_ | Plup. _asranír_ | Futr. _asrá'ix_}	(a)srain	Vb	Irregular
 giant, huge	lutáin	kiaks	laks	Adj
 go (to), away (to)	vahín	fayín	vahn	Vb
-have (to)	yaar (Pr. yaar /  Pr1P. aarn / Ps. aan / Pp. yánir / Fu. aax / Co. aaxa / Im. ean)	"	"	Vb	Irregular; 'aarn' in present first person only, same irregular conjugations in Rkaarik
-possess, hold (to)	ayaar (Pr. ayaar / Ps. ayaan / Pp. áyanir / Fu. ayaax / Co. áyaxa / Im. anaen)	ayaaren	yaar	Vb	Irregular in Rekharhakr 
+have (to)	yaar I{Pres. _yaar_ |  Pres 1st person. _aan_ | Past. _aans_ | Plup. _yánir_ | Futr. _aax_ | Cond. _aaxa_ | Impr. _ya_}	"	"	Vb	Irregular; specific 1st person difference. 
+possess, hold (to)	ayaar I{Pres. _ayaar_ | Past. _ayaan_ | Plup. _áyanir_ | Futr. _ayaax_ | Cond. _áyaxa_ | Impr. _anya_}	ayaaren	yaar	Vb	Irregular in Rekharhakr 
 he (3rd male)	aak	thar	thaa	Pn	Also gender-neutral in Rkaarik
 hearth, haven	esxín	exhín	axn	N
 home	axín	axhín	axn	N
@@ -78,10 +78,10 @@ language, speech	hakr	hkar	hakr	N
 layered, repeated, numerous	aratái	aratás	ar(a)tái	Adj
 light	vos	"	"	N
 like (to)	kain	sen	ksan	Vb
-live (to)	xirén (Pr. xirén / Ps. xiríh / Pp. xiriir / Fu. xiríkh / Co. xirkhá / Im. xii)	xirén (Ps. xiréns / Pp. xirénir / Fu. xiríx / Co. xirixaa / Im. xirér)	xirn	Vb	Irregular, being alive
+live (to)	xirén I{Pres. _xirén_ | Past. _xiríh_ | Plup. _xiriir_ | Futr. _xiríkh_ | Cond. _xirkhá_ | Impr. _xii_}	xirén I{Past. _xiréns_ | Plup. _xirénir_ | Futr. _xiríx_ | Cond. _xirixaa_ | Impr. _xirér_}	xirn	Vb	Irregular, being alive
 may, permitted to	iir	aer	iir	MVb
-move (to)	exliin	xilyín	exln	Vb	Emotionally
-move (to), shift (to)	xiláen (Pr. xiláen / Ps. xilaés / Pp. xilaér / Fu. xiláex / Co. xiláexa / Im. xiláe)	"	xiln	Vb	Physically, Irregular in Rekharhakr
+move (to), change in emotion(to)	exliin	xilyín	exln	Vb	Emotionally
+move (to), shift (to)	xiláen I{Pres. _xiláen_ | Past. _xilaés_ | Plup. _xilaér_ | Futr. _xiláex_ | Cond. _xiláexa_ | Impr. _xiláe_}	"	xiln	Vb	Physically, Irregular in Rekharhakr
 must	os	us	os	MVb
 My (1st poss)	zarón, ron	vosón, son	zaron, zron, ron	Pn
 nation, country	khárik	kaarik	khar'k	N
@@ -161,7 +161,7 @@ guard, protect (to)	kantín			Vb	nf.
 plan, intend (to)	laevín			Vb	nf.
 raise, angle up (to)	matáin			Vb	nf.
 head	tokái			N	nf. body part 
-roar (to)	vrakháir (Ps. vrakháie / Pp. vrakháir / Fu. vrakhái / Co. vrakhára / Im. vrákha)			Vb	nf. Irregular
+roar (to)	vrakháin I{Past. _vrakháie_ | Plup. _vrakháir_ | Futr. _vrakhái_ | Cond. _vrakhára_ | Impr. _vrákhai_}			Vb	nf. Irregular
 order, commandment	tarxaal			N	nf.
 sky	sára	"	sar	N
 torrential and unrelenting	evakháie			Adj	nf. Of rains and storms
@@ -169,12 +169,12 @@ peaceful	áriae			Adj	nf.
 gentle	erváie			Adj	nf.
 celebrate, rejoice (to)	karomín			Vb	nf.
 rain	vuthós			N	nf.
-become (to)	kamaan (Ps. kamaan / Pp. kamaarn / Fu. kamaax / Co. kamaxaa / Im. kamaa)			Vb	nf. Irregular
+become (to)	kamaan I{Pres. _kamaan_ | Past. _kamaan_ | Plup. _kamaarn_ | Futr. _kamaax_ | Cond. _kamaxaa_ | ImPres. _kamaa_}	kemaan	kamn	Vb	nf. RE Irregular
 prayer	gáda			N	nf.
 pray (to)	gardín			Vb	nf.
 another, someone else	alaar			Pn	nf.
 anger, annoyance	arák			N	nf.
-meet, encounter (to)	saeraan (Ps. saeraas / Pp. saeraar / Fu. saeraax / Co. saeraxaa / Im. saeraa)			Vb	nf. Irregular in Rekharhakr
+meet, encounter (to)	saeraan I{Past. _saeraas_ | Plup. _saeraar_ | Futr. _saeraax_ | Cond. _saeraxaa_ | Impr. _saeraa_}			Vb	nf. RE Irregular
 wrath, fury	khímer			N	nf.
 deadly, extremely dangerous	kharáse			Adj	nf.
 monster	diziiren			N	nf.
@@ -209,6 +209,6 @@ between	ithárer			Pp	nf.
 balance	isériyi			N	nf.
 where	ton			Pp	nf.
 repose, rest	yaan		yaan	N	nf.
-give (to)	malán (Ps. malán / Pp. malár / Fu. maláx / Co. malaxá / Im. malá)	" (Ps. malás)	maln	Vb	Irregular
+give (to)	malán I{Past. _malán_ | Plup. _malár_ | Futr. _maláx_ | Cond. _malaxá_ | Impr. _malá_}	" I{Past. _malás_}	maln	Vb	Irregular; RK only past form different
 dawn	asái			N	nf.
 dance (to)	karín	korén	korn	Vb
