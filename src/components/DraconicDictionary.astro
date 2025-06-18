@@ -1,5 +1,6 @@
 ---
 import "../styles/components/blogstorylist.scss";
+import "../styles/components/dictionarycollapsible.scss";
 import ColourBand from "./ColourBand.astro";
 import CBox from "./CBox.astro";
 
@@ -47,7 +48,6 @@ rows.sort((a, b) =>
     </div>
 </ColourBand>
 <CBox wide class="especiallyso">
-
     <table id="dictionary" class="grey dictionarytable"></table>
 
     <script is:inline define:vars={{ rows }} type="module">
@@ -92,8 +92,17 @@ rows.sort((a, b) =>
         function addRow(cells) {
             const tr = document.createElement("tr");
             cells.forEach((txt, i) => {
+                const processed = txt.replace(
+                    /I\{([^}]+)\}/g,
+                    (_, content) =>
+                        `<button type="button" class="toggle-btn">
+                    <strong>I</strong>
+                    <span class="toggle-content" style="display:none;">${content}</span>
+                    </button>`,
+                );
+
                 const td = document.createElement("td");
-                td.innerHTML = txt
+                td.innerHTML = processed
                     .replace(/__(.+?)__/g, "<u>$1</u>")
                     .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
                     .replace(/(?:\*|_)([^*_]+?)(?:\*|_)/g, "<em>$1</em>")
@@ -103,6 +112,14 @@ rows.sort((a, b) =>
                 tr.appendChild(td);
             });
             tableEl.appendChild(tr);
+
+            tr.querySelectorAll('.toggle-btn').forEach(btn => {
+                const span = btn.querySelector('.toggle-content');
+                btn.addEventListener('click', () => {
+                    const isHidden = span.style.display === 'none';
+                    span.style.display = isHidden ? '' : 'none';
+                });
+            });
         }
 
         function doSearch() {
@@ -148,6 +165,4 @@ rows.sort((a, b) =>
 
         renderTable(dataObjs);
     </script>
-    
 </CBox>
-

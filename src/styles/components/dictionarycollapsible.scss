@@ -1,0 +1,20 @@
+@use "../colours.scss";
+@use "../fonts.scss";
+
+$border: #00000040;
+$bg: #87878720;
+$hover: #50505030; 
+
+button.toggle-btn {
+    font-family: fonts.$body;
+    border: 1px solid $border;
+    border-radius: 2pt;
+    background-color: $bg;
+    min-width: 18pt;
+    font-size: 11pt;
+    margin-bottom: 2pt;
+
+    &:hover {
+        background-color: $hover;
+    }
+}
