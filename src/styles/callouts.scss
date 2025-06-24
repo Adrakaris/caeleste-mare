@@ -66,13 +66,19 @@ $shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
     font-family: fonts.$body;
 }
 
-[data-callout-type="comment"] {
+[data-callout-type="comment"],
+[data-callout-type="comment-serif"] {
     background-color: colours.$green-light;
     padding: $standard-padding;
     
     [data-callout-title] {
         display: none;
     }
+}
+
+[data-callout-type="comment-serif"] {
+    font-size: 13pt;
+    font-family: fonts.$body;
 }
 
 [data-callout-type="box-title-serif"] {
