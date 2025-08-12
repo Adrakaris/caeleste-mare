@@ -1,31 +1,37 @@
 English	Rekharhakr	Rkaarik	Hakr	Class	Notes
-0, none, null	rin	zir	rin	N	
-1, one, single	yir	yor, kio	yir	N
-10, tenth, decade	hii, hiira	zin 	xi	N	
-100, hundred	datái	datár	datái	N	
-1000, thousand	zinárai	zindáran	sína	N	x thousand y hundred tens
-11, eleven	hiiyir	urvin	alái	N	
-12, twelve	hi'ahr	talvin	ahái	N	
-13, thirteen	hiisen	sin'a'zin	asár	N	[RE] units go after tens [RK] unit-and-tens
-14, fourteen	hiixirn	xirn'a'zin	axír	N	
-15, fifteen, round [of a game]	hiizor	vor'a'zin	aváz	N	
-16, sixteen	hiirun	run'a'zin	xí'run	N	
-17, seventeen	hiizair	zair'a'zin	xi'zaar	N	
-18, eighteen	hiipra	erkh'a'zin	xí'vra	N	
-19, nineteen	hiithu	thun'a'zin	xi'thú	N	
-2, second	ahr	tah	ah	N	
-20, twenty, score	ráhathii	ratazín	naks	N	
-200, two hundred	ahr datái	tah datái	nankái	N	[HK] any hundreds >= 300 goes [n]-100 
-21, twenty one	ráhathii yir	yor'a'ratazín	náks'iir	N	
-3, third	sen	sin	sen	N	
-30, thirty	sénhii	siizin	saks	N	[RE|RK] any number > 30 goes [n]-10
-4, fourth	xirn	xirn	xirn	N	
-40, forty	xírnhii	xírnzin	xirn'xi	N	[HK] any number > 40 goes [n]-10
-5, fifth	zor	vor	zor	N	
-6, sixth	run	run	run	N	
-7, seventh	zair	zair	zaar	N	
-8, eighth	pra	erkh	vra	N	
-9, ninth	thu	thun	thu	N	
+ 0, none, null	rin	nulla	rin	N	
+ 1, one, single	yir	yor, kio	yir	N
+ 2, second	ahr	tah	ah	N	
+ 3, third	sen	sin	sen	N	
+ 4, fourth	xirn	xirn	xirn	N	
+ 5, fifth	zor	vor	zor	N	
+ 6, sixth	run	run	run	N	
+ 7, seventh	zair	zair	zaar	N	
+ 8, eighth	pra	erkh	vra	N	
+ 9, ninth	thu	thun	thu	N	
+ 10, tenth, decade	he, haera	zin 	xi	N	
+ 11, eleven	aelá	le'avin	alái	N	
+ 12, twelve	ahaa	haavin	ahái	N	
+ 13, thirteen	asaa	sin'a'zin	asár	N	[RK] regular after 12; (unit)'a'(tens)
+ 14, fourteen	áexa 	xirn'a'zin	axír	N	
+ 15, fifteen, round [of a game]	áevas	vor'a'zin	aváz	N	
+ 16, sixteen	áerus	run'a'zin	arún	N	
+ 17, seventeen	ászan	zair'a'zin	azsn	N	
+ 18, eighteen	ávran	erkh'a'zin	avrn	N	
+ 19, nineteen	aasun	thun'a'zin	asún	N	
+ 20, twenty, score	nak	tákzin	nak	N	[RE|HK] regular base-20 system; 25 is (twenty) (five); 35 is (twenty) (fifteen)
+ 21, twenty one	nak yir	yor'a'tákzin	náksiir	N	
+ 30, thirty	nak'he	sírzin	nákxi	N	[RK] lit. "thirty-ten" but sound changes due to h -> k, n -> r
+ 31, thirty one	nak aelá	yor'a'sírzin	nákalái	N
+ 40, forty	anák	xírzin	á(h)nak	N	
+ 50, fifty	anák'he	vórzin	á(h)nakxi	N
+ 60, sixty	senák	rúrzin	sénnak	N
+ 70, seventy	senák'he	záirzin	sénnakxi	N
+ 80, eighty	xírnak	érkhin	xírnnak	N
+ 90, ninety	xírnak'he	thúnzin	xírnnakxi	N
+ 100, hundred	dátai	datái	dátai	N	
+ 200, two hundred	ahr datái	tah datái	nánkai	N	(number) datái is used for the hundreds place [HK] nánkai is unique 
+ 1000, thousand	zinái	zindái	sína	N	x thousand y hundred tens
 twin, pair	yelr, yelv-	yel, yelf-	ahr, ah-	N	"A pair of" is a prefix placed before the noun
 sibling	yelvór	aelvór	elvr	N
 above, on top of	háva	alán	haf	Pp
@@ -86,8 +92,8 @@ must	os	us	os	MVb
 My (1st poss)	zarón, ron	vosón, son	zaron, zron, ron	Pn
 nation, country	khárik	kaarik	khar'k	N
 night	xarái	"	xrai	N
-no, not	da	ne	de	MVb
-nothing	dakh	nakh	dakh	N
+no, not	da	ne	da	MVb
+nothing	rin	nin	rin	N
 play (to)	paziin	"	pazn	Vb
 river, stream	thúrav	thúraf	th'r	N
 sad, dreary	maan	maasn	maan	Adj
