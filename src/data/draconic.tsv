@@ -41,7 +41,7 @@ animal scale	zaakos	zokaas	zaaks	N
 around, surround	yúrir	yurír	yrir	Pp
 Asyr Shai	asiir	"	"	N	Proper
 bare, naked	kálgen	kalaan	kaln	Adj
-be (to)	siin I{Pres: _siin_ | Past, Plup: _is_ | Futr. *xii* | Cond. *xia* | ImPres. *sii* | Copl. *sn*}	" I{Copl. *is*}	"	Vb	RE and RK only differ on copula
+be (to)	siin I{Pres: _siin_ | Past, Plup: _is_ | Futr. *xii* | Cond. *xia* | ImPres. *sii* | Copl. *sn*}	" I{Copl. *is*}	"	Vb	RE and RK only differ on copula; can be shortened to _si_
 below, beneath	siia	xiia	xia	Pp
 bend, yield	ligárin	lakáren	líkrin	Vb
 bind, constrict	sávan	saván	savn	Vb
@@ -57,7 +57,6 @@ come (to)	komán I{Pres. " | Past. _komás_ | Plup. _kománar_ | Futr. _komáe_ 
 copper	tónis	tónin	tons	N
 crystal, gemstone	polór	"	polr	N
 darken (to), extinguish (to)	kiisin	kiisen	kis'sn	Vb
-deep	váth	"	vath	Adj
 depths, abyss	váthas	"	vsath	N
 desolate, barren	táikhan	táikhe	taikh	Adj
 diamond	xirón	xhíron	xirón	N
@@ -141,7 +140,6 @@ eye	arúm	arún	(a)rum	N
 like, as	san	sen	san	Pp	Comparative (A like B)
 azure, deep blue	xasáth	"	xsas	Adj
 flood-rains	miirvúthos			N	nf.
-fast, quick	xyae	"	"	Adj
 death	khars 			N	nf.
 famine	líkhres			N	nf.
 damned, condemned, unlucky	khazás			N	nf. Those who seem to be on the wrong side of life. Not derogatory.
@@ -151,7 +149,7 @@ die (to)	kharatín			Vb	nf.
 this	hir			Pp
 chaotic	diskáie		dskór	Adj	nf.
 chaos	diskáia		dskór	N	nf.
-resist, struggle against (to)	ankonín	aakonan	ákan	Vb	
+resist, struggle against, suffer through, withstand (to)	ankonín	aakonan	ákan	Vb	
 arise, rise (to)	gaimín			Vb
 divine, holy, celestial	xanáe	xanáe	xána	Adj	
 divinity, blessed	xána	xána	xána	N	
@@ -179,7 +177,7 @@ become (to)	kamaan I{Pres. _kamaan_ | Past. _kamaan_ | Plup. _kamaarn_ | Futr. _
 prayer	gáda			N	nf.
 pray (to)	gardín			Vb	nf.
 another, someone else	alaar			Pn	nf.
-anger, annoyance	arák			N	nf.
+anger, annoyance	aráks			N	nf.
 meet, encounter (to)	saeraan I{Past. _saeraas_ | Plup. _saeraar_ | Futr. _saeraax_ | Cond. _saeraxaa_ | Impr. _saeraa_}			Vb	nf. RE Irregular
 wrath, fury	khímer			N	nf.
 deadly, extremely dangerous	kharáse			Adj	nf.
@@ -218,3 +216,13 @@ repose, rest	yaan		yaan	N	nf.
 give (to)	malán I{Past. _malán_ | Plup. _malár_ | Futr. _maláx_ | Cond. _malaxá_ | Impr. _malá_}	" I{Past. _malás_}	maln	Vb	Irregular; RK only past form different
 dawn	asái			N	nf.
 dance (to)	karín	korén	korn	Vb
+to, towards, unto	tao	tao	tao	Pp
+child	vaeor	vaer	for	N	term of endearment (senior to junior)
+plight, struggle	kastái			N	a condition of suffering sb. is in, but does not imply action; cf. _ankonai_
+resistance, struggle	ankonái	aakonái	ákan	N	the effort in resisting or working against suffering; cf, _kastai_
+king	khan	kaan	khan	N	west: usually used as top-level title even if they use "Emperor" in common; east: comparable to cn. 王 "prince" or "enfeoffed king"
+emperor	rekhán	rekaan	rkhan	N	west: usually a style title; east: normal title for emperor
+lord	arkhán	arkaan	arkhan	N	generic term of nobles, used more often for nobles at Earl (伯) rank or above
+empire	rekhánkharik	rekáankaarik	rkhankhar(i)k	N
+kingdom	khánkharik	khankaarik	khankhar(i)k	N
+scum, despicable being	daet			N	pejorative

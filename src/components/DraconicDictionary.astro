@@ -113,23 +113,27 @@ rows.sort((a, b) =>
             });
             tableEl.appendChild(tr);
 
-            tr.querySelectorAll('.toggle-btn').forEach(btn => {
-                const span = btn.querySelector('.toggle-content');
-                btn.addEventListener('click', () => {
-                    const isHidden = span.style.display === 'none';
-                    span.style.display = isHidden ? '' : 'none';
+            tr.querySelectorAll(".toggle-btn").forEach((btn) => {
+                const span = btn.querySelector(".toggle-content");
+                btn.addEventListener("click", () => {
+                    const isHidden = span.style.display === "none";
+                    span.style.display = isHidden ? "" : "none";
                 });
             });
         }
 
+        /** Strips accent marks from a string */
+        const normalise = (s) =>
+            s.normalize("NFD").replace(/\p{Diacritic}/gu, "");
+
         function doSearch() {
-            const kw = inputEl.value.trim().toLowerCase();
+            const kw = normalise(inputEl.value.trim().toLowerCase());
             const result = kw
                 ? dataObjs.filter((obj) => {
                       const words = kw.split(/\s+/);
                       return words.every((w) =>
                           activeCols.some((i) =>
-                              (obj[headerKeys[i]] || "")
+                              normalise(obj[headerKeys[i]] || "")
                                   .toLowerCase()
                                   .includes(w),
                           ),
