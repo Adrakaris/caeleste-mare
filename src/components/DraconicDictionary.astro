@@ -124,7 +124,9 @@ rows.sort((a, b) =>
 
         /** Strips accent marks from a string */
         const normalise = (s) =>
-            s.normalize("NFD").replace(/\p{Diacritic}/gu, "");
+            s.normalize("NFD")
+                .replace(/\p{Diacritic}/gu, "")
+                .replace("'", "");
 
         function doSearch() {
             const kw = normalise(inputEl.value.trim().toLowerCase());
