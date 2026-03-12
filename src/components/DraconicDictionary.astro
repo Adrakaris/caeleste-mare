@@ -20,9 +20,12 @@ const rows = lines.slice(1).map((line) => {
 });
 
 // Sort by the 'English' column
-rows.sort((a, b) =>
-    a.English.localeCompare(b.English, "en", { sensitivity: "base" }),
-);
+rows.sort((a, b) => {
+    const aNum = /^\d/.test(a.English);
+    const bNum = /^\d/.test(b.English);
+    if (aNum !== bNum) return aNum ? 1 : -1;  // special case to sort numbers last
+    return a.English.localeCompare(b.English, "en", { sensitivity: "base" });
+});
 ---
 
 <ColourBand>
