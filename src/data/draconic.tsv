@@ -143,7 +143,8 @@ flood-rains	miirvúthos			N	nf.
 death	khars 			N	nf.
 famine	líkhres			N	nf.
 damned, condemned, unlucky	khazás			N	nf. Those who seem to be on the wrong side of life. Not derogatory.
-people	arík	"	ark	N	Non-dragon 
+person, people	árik	"	ar(i)k	N	Specifically non-dragons, neutral term, often defaults to mankind
+landed people	diaarik	dirárik		N	Non-dragon "landed race", slight pejorative
 starve (to)	likháin			Vb	nf.
 die (to)	kharatín			Vb	nf.
 this	hir			Pp
@@ -233,3 +234,6 @@ bright	seré	fair	sre	Adj
 over	ryin	avín	ryin	Pp
 silver	yirén	yirén	iren	N, Adj
 ribbon		tain		N
+wild-born	árakain	árakain		N	gen term for dragons who are born and live outside of civilised society
+royal-born	khánkain	kaankain		N	gen term for dragons who are born within civilised society
+forsaken one	dinazárik	dinsaarik		N	highly pejorative, possibly one of the most serious insults
