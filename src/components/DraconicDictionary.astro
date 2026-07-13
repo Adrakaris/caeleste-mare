@@ -4,28 +4,6 @@ import "../styles/components/dictionarycollapsible.scss";
 import ColourBand from "./ColourBand.astro";
 import CBox from "./CBox.astro";
 
-import tsv from "../data/draconic.tsv?raw";
-
-const lines = tsv.trim().split("\n");
-
-// Parse headers
-const headers = lines[0].split("\t");
-
-// Parse rows, pad as needed
-const rows = lines.slice(1).map((line) => {
-    const cells = line.split("\t");
-    // Pad missing trailing columns
-    while (cells.length < headers.length) cells.push("");
-    return Object.fromEntries(headers.map((h, i) => [h, cells[i] ?? ""]));
-});
-
-// Sort by the 'English' column
-rows.sort((a, b) => {
-    const aNum = /^\d/.test(a.English);
-    const bNum = /^\d/.test(b.English);
-    if (aNum !== bNum) return aNum ? 1 : -1;  // special case to sort numbers last
-    return a.English.localeCompare(b.English, "en", { sensitivity: "base" });
-});
 ---
 
 <ColourBand>
@@ -51,13 +29,63 @@ rows.sort((a, b) => {
     </div>
 </ColourBand>
 <CBox wide class="especiallyso">
+    <p id="dict-loading">Loading dictionary…</p>
     <table id="dictionary" class="grey dictionarytable"></table>
 
-    <script is:inline define:vars={{ rows }} type="module">
+    <script is:inline type="module">
+        const SHEET_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSxP3pgOC6nikZCUeYJ2Ak4I_wZM4w5Q0whpDMvQmnHMICAfvPVN9DcRtOjUIM85k9I3YZ8pIoa_bKe/pub?output=csv&gid=1014274663';
+        const CACHE_KEY = 'draconic_dict_v1';
+        const CACHE_TTL = 10 * 60 * 1000;
+
+        function parseCsv(text) {
+            const parseRow = (row) => {
+                const result = [];
+                let cur = '', inQuote = false;
+                for (let i = 0; i < row.length; i++) {
+                    const c = row[i];
+                    if (c === '"') {
+                        if (inQuote && row[i + 1] === '"') { cur += '"'; i++; }
+                        else inQuote = !inQuote;
+                    } else if (c === ',' && !inQuote) { result.push(cur); cur = ''; }
+                    else cur += c;
+                }
+                result.push(cur);
+                return result;
+            };
+            const lines = text.trim().split('\n');
+            const headers = parseRow(lines[0]);
+            const dataRows = lines.slice(1)
+                .map(line => {
+                    const cells = parseRow(line);
+                    while (cells.length < headers.length) cells.push('');
+                    return Object.fromEntries(headers.map((h, i) => [h.trim(), (cells[i] ?? '').trim()]));
+                })
+                .filter(row => Object.values(row).some(v => v !== ''));
+            dataRows.sort((a, b) => {
+                const aE = a.English || '', bE = b.English || '';
+                const aNum = /^\d/.test(aE), bNum = /^\d/.test(bE);
+                if (aNum !== bNum) return aNum ? 1 : -1;
+                return aE.localeCompare(bE, 'en', { sensitivity: 'base' });
+            });
+            return dataRows;
+        }
+
+        async function getData() {
+            try {
+                const cached = JSON.parse(localStorage.getItem(CACHE_KEY) || 'null');
+                if (cached && Date.now() - cached.ts < CACHE_TTL) return cached.rows;
+            } catch {}
+            const text = await fetch(SHEET_URL).then(r => { if (!r.ok) throw r; return r.text(); });
+            const rows = parseCsv(text);
+            try { localStorage.setItem(CACHE_KEY, JSON.stringify({ ts: Date.now(), rows })); } catch {}
+            return rows;
+        }
+
         const COLORS = ["#783F04", "#20124D", "#4C1130", "#274E13", "#7F6000"];
         const tableEl = document.getElementById("dictionary");
         const inputEl = document.getElementById("se");
         const goBtn = document.getElementById("sb");
+        const loadingEl = document.getElementById("dict-loading");
         const colButtons = [
             "s-eng",
             "s-east",
@@ -68,9 +96,8 @@ rows.sort((a, b) => {
         ].map((id) => document.getElementById(id));
         let activeCols = [0, 1, 2, 3, 4, 5];
 
-        // extract header keys in order
-        const headerKeys = Object.keys(rows[0]);
-        const dataObjs = rows;
+        let headerKeys = [];
+        let dataObjs = [];
 
         function renderTable(objs) {
             tableEl.innerHTML = "";
@@ -172,6 +199,14 @@ rows.sort((a, b) => {
             }
         });
 
-        renderTable(dataObjs);
+        getData().then(rows => {
+            loadingEl.style.display = 'none';
+            headerKeys = Object.keys(rows[0]);
+            dataObjs = rows;
+            renderTable(dataObjs);
+        }).catch(err => {
+            loadingEl.textContent = 'Failed to load dictionary. Please refresh.';
+            console.error(err);
+        });
     </script>
 </CBox>
