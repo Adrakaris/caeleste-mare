@@ -1,0 +1,71 @@
+---
+// Creates a table of contents as a list 
+
+interface Props {
+  // include H1s in search
+  includeH1?: boolean;
+  // whether to use numerals versus unordered bullets
+  ordered?: boolean;
+}
+const { includeH1 = false, ordered = false } = Astro.props;
+const tag = ordered ? 'ol' : 'ul';
+const selector = includeH1 ? 'h1, h2, h3, h4' : 'h2, h3, h4';
+const minDepth = includeH1 ? 1 : 2;
+---
+
+<nav class="toc" aria-label="Table of contents">
+  <ol id="toc-root" data-tag={tag} data-selector={selector} data-min={minDepth} hidden></ol>
+</nav>
+
+<script>
+  const root = document.getElementById('toc-root') as HTMLElement;
+  const tag = root.dataset.tag as 'ol' | 'ul';
+  const selector = root.dataset.selector!;
+  const minDepth = Number(root.dataset.min);
+
+  // Swap the placeholder root to the requested tag.
+  const list = document.createElement(tag);
+  list.className = 'toc-list';
+  root.replaceWith(list);
+
+  const article = document.querySelector('article, main') ?? document.body;
+  const headings = article.querySelectorAll<HTMLHeadingElement>(selector);
+
+  const stack: { depth: number; list: HTMLElement }[] = [{ depth: minDepth - 1, list }];
+
+  headings.forEach((h) => {
+    if (!h.id) {
+      h.id = h.textContent!.trim().toLowerCase()
+        .replace(/[^\w\s-]/g, '').replace(/\s+/g, '-');
+    }
+    const depth = Number(h.tagName[1]);
+
+    while (stack.length > 1 && stack[stack.length - 1].depth >= depth) stack.pop();
+
+    let parent = stack[stack.length - 1].list;
+    // If we jumped a level (e.g. h2 -> h4), nest a new list under the last li.
+    if (depth > stack[stack.length - 1].depth + 1) {
+      const lastLi = parent.lastElementChild as HTMLLIElement | null;
+      if (lastLi) {
+        const nested = document.createElement(tag);
+        lastLi.appendChild(nested);
+        parent = nested;
+        stack.push({ depth: depth - 1, list: nested });
+      }
+    }
+
+    const li = document.createElement('li');
+    const a = document.createElement('a');
+    a.href = `#${h.id}`;
+    a.textContent = h.textContent;
+    li.appendChild(a);
+    parent.appendChild(li);
+
+    const nested = document.createElement(tag);
+    li.appendChild(nested);
+    stack.push({ depth, list: nested });
+  });
+
+  // Clean up empty nested lists left over from the stack.
+  list.querySelectorAll(`${tag}:empty`).forEach((el) => el.remove());
+</script>
